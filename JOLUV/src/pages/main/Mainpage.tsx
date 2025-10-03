@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import TotalCredits from '../../components/displayCredits/totalCredits';
+import  EachCredits from '../../components/displayCredits/eachCredits';
 
 // 아이콘을 위한 간단한 placeholder 컴포넌트
 const IconPlaceholder: React.FC<{ className?: string }> = ({ className }) => (
@@ -98,6 +100,19 @@ const MainPage: React.FC = () => {
             <li className="p-2">항목 3</li>
           </ul>
         </div>
+        {/*이부분이 각각의 학점 관련 컴포넌트를 가로 배치해둔 것 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex space-x-8 items-stretch"> 
+            {/* 1. 왼쪽 컴포넌트: 전체 학점 현황 */}
+            <div className="flex-1">
+              <TotalCredits data={{totalCredits: 120, completedCredits:90}}/>
+            </div>
+            {/* 2. 오른쪽 컴포넌트: 전공/교양 학점 현황 */}
+            <div className="flex-1">
+                <EachCredits data={{MajorCredits:50, CultureCredits:30}}/>
+            </div>
+        </div>
+      </div>
       </main>
     </div>
   );
