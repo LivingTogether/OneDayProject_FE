@@ -11,7 +11,7 @@ const MainPage: React.FC = () => {
 
   // 페이지 이동을 처리하는 함수들 (필요에 따라 경로 수정)
   const handleLoginClick = () => {
-    // navigate('/login'); // 로그인 페이지 경로
+    navigate('/login'); 
     console.log("Login button clicked");
   };
 
