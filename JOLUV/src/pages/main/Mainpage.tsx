@@ -13,7 +13,7 @@ const MainPage: React.FC = () => {
 
   // 페이지 이동을 처리하는 함수들 (필요에 따라 경로 수정)
   const handleLoginClick = () => {
-    // navigate('/login'); // 로그인 페이지 경로
+    navigate('/login'); 
     console.log("Login button clicked");
   };
 
@@ -52,7 +52,7 @@ const MainPage: React.FC = () => {
         {/* Title Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">KNU 졸업요건</h1>
-          <p className="text-lg text-gray-600">"컴퓨터학부 당신을 위한 페이지 입니다."</p>
+          <p className="text-lg text-gray-600">"컴퓨터학부 당신의 졸업을 위한 페이지 입니다."</p>
         </div>
 
         {/* Icon Button Grid Section */}
