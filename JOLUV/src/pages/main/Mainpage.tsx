@@ -50,7 +50,7 @@ const MainPage: React.FC = () => {
         {/* Title Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">KNU 졸업요건</h1>
-          <p className="text-lg text-gray-600">"컴퓨터학부 당신을 위한 페이지 입니다."</p>
+          <p className="text-lg text-gray-600">"컴퓨터학부 당신의 졸업을 위한 페이지 입니다."</p>
         </div>
 
         {/* Icon Button Grid Section */}
