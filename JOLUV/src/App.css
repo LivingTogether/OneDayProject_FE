@@ -40,3 +40,41 @@
 .read-the-docs {
   color: #888;
 }
+
+/* 페이지속의 페이지 ( 과목별 성적과 재이수 필요성 ) */
+
+/* App.css */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.header select,
+.header input {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.header button {
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cards-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
