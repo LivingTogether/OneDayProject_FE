@@ -3,6 +3,7 @@ import axios from 'axios';
 import SubjectCard from './components/SubjectCard';
 
 // 스타일은 Tailwind CSS 클래스를 사용하여 버튼을 꾸밉니다.
+// @ts-ignore
 import './index.css';
 
 type SortType = 'name' | 'grade' | 'credit';
@@ -13,7 +14,7 @@ interface Subject {
   id: number;
   name: string;
   credit: number;
-  grade: string | number;        // 표시용 등급 (A+, B0 ...)
+  grade: string ;        // 표시용 등급 (A+, B0 ...)
   score: number;        // ⭐️ [추가] 정렬용 원본 점수 (4.3, 3.0 ...)
   category: string;
   needsRetake: boolean;
@@ -133,7 +134,8 @@ const Builtin: React.FC = () => {
     return matchesSearch && matchesCategory;
   });
 
-  return (
+  // @ts-ignore
+    return (
     <div className="w-full h-full">
       <header className="flex flex-col md:flex-row gap-4 justify-between items-center mb-6">
         
